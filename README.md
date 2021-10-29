@@ -1,5 +1,5 @@
 # diary
-app designed to keep my memories in a single place and accessible other than my brain.
+app designed to keep my memories in an accessible place other than my brain.
 
 ## stack (Node.js App)
 - (front-end): React + Electron
