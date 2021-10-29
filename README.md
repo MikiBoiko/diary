@@ -2,7 +2,7 @@
 app designed to keep my memories in a single place and accessible other than my brain.
 
 ## stack (Node.js App)
-(front-end): React + Electron
+(front-end): React + Electron \n
 (back-end): Express
 (database): PostgreSQL
 
