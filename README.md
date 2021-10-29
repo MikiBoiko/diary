@@ -9,4 +9,4 @@ app designed to keep my memories in a single place and accessible other than my 
 ## available HTTP requests for backend
 
 ## TODO
-complete GitHub :P
+- complete GitHub 😧
