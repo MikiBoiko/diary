@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  --button-margin: 0.5rem;
+
+  margin: var(--button-margin);
+  padding: 0.25rem 0.5rem;
+}

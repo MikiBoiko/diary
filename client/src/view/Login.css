@@ -1,0 +1,32 @@
+.Login {
+    width: 100%;
+}
+
+.Form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    width: 50%;
+
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.Input:focus::placeholder {
+    color: transparent;
+}
+
+.Button {
+    margin: 0.5rem;
+    padding: 1rem 3rem;
+
+    font-size: 1.2rem;
+}

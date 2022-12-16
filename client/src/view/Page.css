@@ -1,0 +1,69 @@
+.Page {
+    width: 100%;
+}
+
+.Navegation {
+    --nav-height: 4rem;
+
+    height: var(--nav-height);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Content {
+    --content-padding: 1rem;
+    padding: var(--content-padding);
+
+    width: calc(100%) - 2*var(--content-padding);
+
+    border-top: 1px solid;
+}
+
+.Navegation > button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.Date {
+    font-size: 1rem;
+}
+
+.Date > input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.Entries {
+    width: 100%;
+    max-height: calc(100% - var(--nav-height));
+}
+
+.Entry {
+    padding: var(--content-padding);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.Entry-Menu {
+    width: calc(100% - 2*var(--button-margin));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.New {
+    display: flex;
+}
+
+.Text {
+    width: 100%;
+}
