@@ -1,6 +1,5 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from 'https://esm.sh/remark-gfm@3'
 
 import { getDate, postEntry, deleteEntry } from "../common/api";
 import { addDaysToDate, dateFromDate } from "../common/utils";
@@ -151,7 +150,7 @@ class Page extends React.Component {
                                                 /*
                                                 currently_editing === index ?
                                                 */
-                                                <ReactMarkdown /* onClick={() => this.setState({ ...this.state, currently_editing: index })} */ children={entry.message} remarkPlugins={[remarkGfm]} />
+                                                <ReactMarkdown /* onClick={() => this.setState({ ...this.state, currently_editing: index })} */ children={entry.message} />
                                                 /*    :
                                                     <textarea className="Text" type="text" value={new_entry} onChange={this.oldEntryChange} />
                                                 */
