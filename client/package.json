@@ -12,6 +12,7 @@
     "react-markdown": "^8.0.4",
     "react-scripts": "5.0.1",
     "react-secure-storage": "^1.0.21",
+    "remark-gfm": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

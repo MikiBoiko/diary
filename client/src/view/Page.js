@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm';
 
 import { getDate, postEntry, deleteEntry } from "../common/api";
 import { addDaysToDate, dateFromDate } from "../common/utils";
@@ -133,7 +134,7 @@ class Page extends React.Component {
                         <img src="" alt="back" />
                     </button>
                     <div className="Date">
-                        <input type="date" required={true} value={dateFromDate(date)} onChange={(e) => this.fetchPage(e.target.valueAsDate)} />
+                        <input type="date" required={true} value={dateFromDate(date)} onChange={(e) => this.fetchPage(e.target.valueAsDate)} remarkPlugins={[remarkGfm]} />
                     </div>
                     <button onClick={this.nextDay}>
                         <img src="" alt="next" />
