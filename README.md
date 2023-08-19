@@ -1,6 +1,6 @@
 # MD Diary
 
-A simple markdown diary for everyday use.
+A simple markdown diary for my everyday use.
 
 ## Framework:
 
