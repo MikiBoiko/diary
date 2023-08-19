@@ -35,14 +35,18 @@ function App() {
     setLogged(false);
   }, [setConnected, setLogged]);
 
+  const onConnect = useCallback(() => {
+    setLogged(true);
+  }, []);
+
   return (
     <div className="App">
       {
         connected ?
           logged ?
-            <Page onDisconnect={onDisconnect} />
+            <Page onDisconnect={ onDisconnect } />
             :
-            <Login onLogin={() => setLogged(true)} />
+            <Login onLogin={ onConnect } />
           :
           "Connecting..."
       }

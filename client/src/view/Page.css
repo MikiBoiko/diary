@@ -17,7 +17,7 @@
     --content-padding: 1rem;
     padding: var(--content-padding);
 
-    width: calc(100%) - 2*var(--content-padding);
+    width: calc(100%) - 2 * var(--content-padding);
 
     border-top: 1px solid;
 }
