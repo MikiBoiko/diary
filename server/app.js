@@ -99,6 +99,30 @@ app.delete('/entry', auth.authToken, (req, res) => {
         });
 });
 
+app.post('/entry', auth.authToken, express.urlencoded({ extended: true }), (req, res) => {
+    const id = req.query.id;
+
+    const message = req.body.message;
+
+    console.log(`[ENTRY] ${new Date()} : Deleting entry to ${ id }`);
+
+    database.query({
+        text: 'DELETE FROM Entries WHERE id = $1',
+        values: [id]
+    })
+        .then((response) => {
+            console.log(response)
+            res.statusCode = 200;
+            res.json({
+                message: "Entry deleted."
+            });
+        })
+        .catch((err) => {
+            console.error(err)
+            res.sendStatus(500);
+        });
+});
+
 app.listen(port, hostname, (err) => {
     if (err) console.error(err);
     else console.log(`Listening on ${hostname}:${port}`);
